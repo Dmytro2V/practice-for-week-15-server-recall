@@ -30,8 +30,7 @@ Below is a list of endpoints for this site:
 
 - `GET /` - Home Page
 - `GET /posts` - View all Posts
-- `GET /posts/:postId` - View details about a specific post, a form for
-  creating a new comment for that post, and a list of comments for that post
+- `GET /posts/:postId` - View details about a specific post
 - `POST /posts` - Submit the creation of a new post
   - a post has a `title` field and a `description` field
 - `PUT /posts/:postId/edit` - Submit the edit of an existing post
@@ -48,6 +47,7 @@ path of the request should be [http://localhost:5000/posts].
 Your goal is to request the following operations on the server using Postman:
 
 - view all posts
+- view one post
 - create a post
 - edit the post
 - delete the post
