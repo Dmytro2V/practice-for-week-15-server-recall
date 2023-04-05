@@ -47,10 +47,27 @@ path of the request should be [http://localhost:5000/posts].
 Your goal is to request the following operations on the server using Postman:
 
 - view all posts
+     - GET /posts
 - view one post
+  GET /posts/1
 - create a post
+  POST /posts
+    Content-Type = 'application/json'
+    body= {
+      "title": "Hi~there", 
+      "description": "post created"
+    } // need double quotes in text and values 
+
 - edit the post
+  PUT /posts/3/edit
+  {
+      "title": "Hi~there - ", 
+      "description": "post edited"
+    } // need double quotes in text and values
+
 - delete the post
+  DELETE /posts/3/delete
+
 
 Formulate the requests in Postman. Each request should be sent with all the
 necessary request components. For all requests that require a body, go to the
